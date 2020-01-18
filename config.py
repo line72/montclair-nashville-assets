@@ -21,8 +21,8 @@ CONFIG = transmogrifier.Config(
         version = '2.0.5',
         revision = 1,
         app_id = 'com.gotransitapp.nashville',
-        app_store_id = 'REPLACE_ME',
-        app_store_url = 'https://apps.apple.com/us/app/go-nashville/idREPLACE_ME'
+        app_store_id = '1495548837',
+        app_store_url = 'https://apps.apple.com/us/app/go-nashville/id1495548837'
     ),
     android_config = transmogrifier.MontclairAndroidConfig(
         version = '1.0.2',
