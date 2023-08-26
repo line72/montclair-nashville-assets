@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Builds the steamboat whitelabel versions
+    - name: Builds the nashville whitelabel versions
       run: |
         sudo apt-get update && sudo apt-get install -y librsvg2-2 imagemagick inkscape
         git config --global user.email "line72@line72.net"
