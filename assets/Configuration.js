@@ -12,7 +12,7 @@
  * Licensed Under the GPLv3
  *******************************************/
 
-import Transloc3Parser from './Transloc3Parser';
+import GTFSRTParser from './GTFSRTParser';
 
 class Configuration {
     constructor() {
@@ -20,7 +20,9 @@ class Configuration {
         this.agencies = [
             {
                 name: 'Routes',
-                parser: new Transloc3Parser(1193, 'https://nashville.gotransitapp.com/api/no.php/3/')
+                parser: new GTFSRTParser('montclair', '/nashville-gtfs.zip',
+                                         'https://nashville.gotransitapp.com/api/no.php/TMGTFSRealTimeWebService/vehicle/vehiclepositions.pb',
+                                         'https://nashville.gotransitapp.com/api/no.php/TMGTFSRealTimeWebService/gtfs-realtime/trapezerealtimefeed.pb')
             }
         ];
     }
