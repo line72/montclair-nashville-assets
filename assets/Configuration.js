@@ -17,6 +17,10 @@ import GTFSRTParser from './GTFSRTParser';
 class Configuration {
     constructor() {
         this.center = [36.166273, -86.781062];
+        this.tileserver = {
+            url: 'https://nashville.gotransitapp.com/tiles/{z}/{x}/{y}.png',
+            subdomains: ''
+        };
         this.agencies = [
             {
                 name: 'Routes',
